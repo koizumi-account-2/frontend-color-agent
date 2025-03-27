@@ -18,14 +18,13 @@ jobs:
         with:
           node-version: 18 
 
-      - name: cd color-agent
-        run: cd color-agent
-
       - name: Install dependencies
         run: npm ci
+        working-directory: ./color-agent
 
       - name: Build React app
         run: npm run build
+        working-directory: ./color-agent
 
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
@@ -36,4 +35,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ap-northeast-1
-          SOURCE_DIR: dist
+          SOURCE_DIR: ./color-agent/dist
