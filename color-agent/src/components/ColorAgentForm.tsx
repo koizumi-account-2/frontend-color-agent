@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SuggestionResult } from "../utils/types";
 import { ColorAgentInput } from "./ColorAgentInput";
 import { ColorAgentOutput } from "./ColorAgentOutput";
