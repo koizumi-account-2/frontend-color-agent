@@ -25,8 +25,6 @@ export const ColorAgentInput = ({
   const clickHandler = async (purpose: string) => {
     setIsLoading(true);
     const result = await callApi(purpose);
-
-    console.log(result);
     setResult(result);
     setIsLoading(false);
   };
