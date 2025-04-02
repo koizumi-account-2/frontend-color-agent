@@ -10,7 +10,7 @@ export const ColorAgentInput = ({
   const [isLoading, setIsLoading] = useState(false);
   const callApi = async (purpose: string) => {
     const response = await fetch(
-      "https://p12f4w9obc.execute-api.ap-northeast-1.amazonaws.com/prod/color",
+      "https://khuz6iz9l0.execute-api.ap-northeast-1.amazonaws.com/prod/color",
       {
         method: "POST",
         headers: {
