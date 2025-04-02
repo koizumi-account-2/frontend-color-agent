@@ -35,7 +35,7 @@ export const ColorAgentInput = ({
   return (
     <div className="p-2 bg-white w-full shadow-md rounded-md mt-10">
       <label className="block text-sm font-medium text-gray-700">
-        色への要求
+        色への要求(具体的にどういったものに使うのか)
       </label>
       <textarea
         className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
